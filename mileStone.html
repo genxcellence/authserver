@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PDF Template Service Sample Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Retirement Planalyzer">
+    <meta name="author" content="American Funds">
+    <meta name="template-hash" content="f3142bbb0a1696d5caa932ecab0fc530">
+    <link rel="stylesheet" href="../static/fonts.css"/>
+    <link rel="stylesheet" href="../static/css/sample.css"/>
+</head>
+<body>
+<div>
+	<img src="../static/img/logo.png" height="132" width="207">
+	<div class="cls_003 date" style="position:absolute;left:847.89px;top:40.08px"><span class="cls_003">May 20, 2020</span></div>
+</div>
+<div id="cover">
+	<div id="container">
+	    <div id="absolute">
+	    	<div class="pdfHeading">
+	        	<h4>Preliminary Retirement Plan Fee Quote</h4>
+	        	<h2 th:text="${priceIt.clientName}">clientName</h2>
+	        </div>
+	        <div class="section">
+	            <p>&nbsp;</p>
+	             &nbsp;
+	              <p>&nbsp;</p>
+	               <p>&nbsp;</p> <p>&nbsp;</p>
+	                <p>&nbsp;</p>
+	                 <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+	            <table width="100%">
+	                 <tr class="contact-info">
+	                    <td width="30%" valign="top">
+	                        Investments are not FDIC-insured, nor are <br>
+	                        they deposits of or guaranteed by a bank or <br>
+	                        any other entity, so they may lose value.
+	                        
+	                    </td>
+	                     <td width="50%" valign="top">&nbsp;</td>
+	                </tr>
+	            </table>
+	        </div>
+	        
+	    </div>
+	</div>
+</div>
+<div class="section secPPTPA">
+	            
+	            <div width="100%" class="pageHeader">
+	                 <div class="contact-info">
+	                    <h3> Preliminary Retirement Plan Fee Quote</h3>
+	                     <div> Client Information </div>
+	                    <div>Plan Sponsor Name: <span th:text="${priceIt.clientName}">clientName</span></div>
+	                    <div>Total Plan Assets:  <span th:text="${priceIt.planAssets}">planAssets</span></div>
+	                       <div>Estimated Annual Contributions: <span th:text="${priceIt.estimatedAnnContributions}">estimatedAnnContributions</span></div>
+	                       <div>Number of Participants: <span th:text="${priceIt.numParticipants}">numParticipants</span></div>
+	                
+	                </div>
+	                &nbsp;<br><br>
+	                
+	                PlanPremier®-TPA
+	            </div>
+	            <div  width="100%" class="pptpaTable">
+	            	<div class="font-bold">Retirement Plan Share Class</div>
+	            	<div class="font-bold bgColorBlue">Annual Recordkeeping Fee<sup>4</sup></div>
+	            	<div class="">Gross Fee</div>
+	            	<div class="">Plan Credit  — As a % of Assets<sup>5,6</sup> </div>
+	            	<div class="">— Dollar Amount</div>
+	            	<div class="">Net Fee </div>
+	            	<div class="font-bold bgColorBlue">Annual Investment Cost</div>
+	            	<div class="font-bold">Average Expense Ratio <sup>7</sup></div>
+	            	<div class="">Dollar Amount</div>
+	            	<div class="font-bold bgColorBlue">Annual TPA Fee <sup>8</sup></div>
+	            	<div class="">&nbsp;</div>
+	            	<div class="font-bold bgColorBlue">Annual Advisor Fee (Fee-based share classes) <sup>9</sup></div>
+	            	<div class="">As a % of Assets</div>
+	            	<div class="">Dollar Amount</div>
+	            	<div class="font-bold bgColorBlue">Wilshire Fiduciary Services</div>
+	            	<div class="">As a % of Assets</div>
+	            	<div class="">Dollar Amount</div>
+	            	<div class="font-bold bgColorBlue">Total Annual Costs<sup>10</sup> </div>
+	            	<div class="">As a % of Assets</div>
+	            	<div class="">Dollar Amount</div>
+	            	
+	            	
+	            </div>
+	            
+	            <div  width="100%" class="pptpaTableData" th:each="priceitresult : ${priceitresultlist}">
+	            	<div class="font-bold" th:text="${priceitresult.shareClassType}">shareClassType</div>
+	            	<div class="font-bold bgColorBlue">&nbsp;</div>
+	            	<div class="" th:text="${priceitresult.annualFee}">annualFee</div>
+	            	<div class="" th:text="${priceitresult.planCreditPercent}">planCreditPercent </div>
+	            	<div class="" th:text="${priceitresult.planCredit}">planCredit</div>
+	            	<div class="" th:text="${priceitresult.netCredit}">netCredit</div>
+	            	<div class="font-bold bgColorBlue">&nbsp;</div>
+	            	<div class="font-bold"  th:text="${priceitresult.investAvgExpRatio}">investAvgExpRatio</div>
+	            	<div class=""  th:text="${priceitresult.investDollarCost}">investDollarCost</div>
+	            	<div class="font-bold bgColorBlue">&nbsp;</div>
+	            	<div class=""  th:text="${priceitresult.annualTPAFee}">annualTPAFee</div>
+	            	<div class="font-bold bgColorBlue">&nbsp;</div>
+	            	<div class=""  th:text="${priceitresult.adviserFeePercent}">adviserFeePercent</div>
+	            	<div class=""  th:text="${priceitresult.adviserFeeDollar}">adviserFeeDollar</div>
+	            	<div class="font-bold bgColorBlue">&nbsp;</div>
+	            	<div class=""  th:text="${priceitresult.adviserFeePercent}">adviserFeePercent</div>
+	            	<div class=""  th:text="${priceitresult.adviserFeeDollar}">adviserFeeDollar</div>
+	            	
+	            	
+	            	
+	            	
+	            </div>
+	            
+	            
+	            
+	            
+	            
+	            
+	            
+	        </div>
+</body>
+</html>
