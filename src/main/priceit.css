@@ -1,0 +1,240 @@
+@page {
+    size: 9.0in 11.7in;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    font: 14px/20px "AvenirNextLTW01-Regular", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+    font-family: "Arial, sans-serif";
+    height: 100%;
+    overflow: hidden;
+}
+
+#wrapper {
+    position: absolute;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+h1 {
+    font: 35px/48px "Avenir Next LT W01 Demi", Arial, sans-serif;
+}
+
+h3 {
+    font: 26px/28px "AvenirNextLTW01-Regular", Arial, sans-serif;
+}
+
+h4 {
+    font: 20px/22px "Avenir Next LT W01 Demi", Arial, sans-serif;
+    color: #80bceb;
+}
+
+h2 {
+    font: 35px/48px "Avenir Next LT W01 Demi", Arial, sans-serif;
+}
+
+a img {
+    border: none;
+}
+
+b,
+strong {
+    font-family: "Avenir Next LT W01 Demi", Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p {
+    font-size: 12px;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.hedge p {
+    font-size: 10px;
+    font-family: "AvenirNextLTW01-Condens 721299", Arial, sans-serif;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#cover #absolute {
+    width: 95%;
+    padding: 20px;
+}
+
+#cover .section, .section {
+    padding: 24px 30px;
+    margin-bottom: 24px;
+}
+
+#cover h1 {
+    display: block;
+    padding: 30px;
+    background-color: #005F9E;
+    color: #fff;
+}
+
+#cover table {
+
+    border-bottom: 2px solid #000;
+}
+
+#cover tr:first-child td {
+    padding-top: 12px;
+}
+
+#cover tr:last-child td:first-child {
+    border-top: 2px solid #000;
+    padding-bottom: 12px;
+}
+
+#cover td {
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#cover ul > li {
+    font-family: "Avenir Next LT W01 Demi", Arial, sans-serif;
+    margin-top: 3px;
+}
+
+
+.date{
+    font-weight:bold;
+    color:#000;
+}
+
+.pdfHeading {
+    display: block;
+    padding: 30px;
+    background:url("../img/backgroundHeading.png");
+    height:77px;
+    widht:100%;
+    color: #000;
+}
+.contact-info td
+{
+    font: 16px/20px  Arial, sans-serif ;
+    font-weight: bold;
+
+
+}
+.pageHeader
+{
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    font-size:14px;
+
+}
+.pageHeader .header-info
+{
+    font-size: 11px;
+    color:#000;
+    font-family: "AvenirNextLTW01-Condens 721299", Arial, sans-serif;
+}
+
+
+
+.secPPTPA .pptpaTable th, .secRPC .rpcTable th {
+    font-size: 12px;
+    color: #000;
+    font-family: "AvenirNextLTW01-Condens 721299", Arial, sans-serif;
+    margin: 20px 0px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+}
+
+.secPPTPA .pptpaTable td, .secRPC .rpcTable td {
+    font-size: 11px;
+    color: #000;
+    font-family: "AvenirNextLTW01-Condens 721299", Arial, sans-serif;
+    margin: 20px 0px;
+    text-align: right;
+}
+
+.font-bold {
+    font: "Avenir Next LT W01 Demi", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.bgColorBlue {
+    background-color: #ccebf9;
+}
+
+.padding-v2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.padding-v1 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.bgColorGray {
+    background-color: #ccc;
+}
+
+.bottom_Border {
+    border-bottom: 1px solid #000;
+}
+
+.sectionHeader {
+    font: 12px Arial, sans-serif;
+    line-height: 15px;
+}
+
+.sectionHeader p {
+    margin: 5px 0;
+    line-height: 15px;
+}
+
+ul.num {
+    margin-left: 20px;
+}
+
+ul.num li {
+    line-height: 14px;
+    list-style-type: decimal;
+}
+
+.secRPC .pageHeader p {
+    font-size: 12px;
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 20px 0px;
+    padding-left: 10px;
+}
