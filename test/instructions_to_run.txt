@@ -1,0 +1,21 @@
+Part 1: Setup
+1. Run command 'npm install' in client-node folder.
+2. Run command 'npm install' in client-react folder.
+3. Run command 'mvn spring-boot:run' in server-java folder.
+Note: Java and Node should be installed.
+
+Part 2: Start
+1. Run command 'npm start' in client-node folder.
+2. Run command 'npm start' in client-react folder.
+3. Run command 'mvn spring-boot:run' in server-java folder.
+
+Servers will run on following ports:
+REACT_PORT = 2222;
+NODE_PORT = 3333;
+JAVA_PORT = 4444;
+
+Part 3: Test
+1. Go to http://localhost:2222/
+2. Enter ID and Password.
+3. Click submit.
+Response for server is shown on screen as well as console.

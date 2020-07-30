@@ -1,0 +1,27 @@
+@import "client/assets/variables.scss";
+@import "client/assets/mixins.scss";
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+
+  .app-body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0px 80px 0px 80px;
+    width: 1280px;
+
+    @include tablet {
+      width: 100%;
+      padding: 0px;
+    }
+
+    @include mobile {
+      width: 100%;
+      padding: 0px;
+    }
+  }
+}
